@@ -1,14 +1,37 @@
-# carbon-marketplace
-A decentralized marketplace that enables anyone to securely buy, sell, and retire tokenized carbon credits, ensuring transparent tracking of environmental impact on the Creditcoin blockchain.
-Step 1: Define Project Scope & User Roles
-Project Summary (One Sentence)
-“A decentralized marketplace for trading tokenized carbon credits, allowing organizations and individuals to securely buy, sell, and retire environmental assets with full transparency on Creditcoin.”
+# Carbon Marketplace — Tokenized Carbon Credits (Creditcoin)
 
-Core User Roles
-Issuer: Certifies and mints new carbon credit tokens for eco-friendly projects.
+A decentralized marketplace concept to **buy, sell, and retire tokenized carbon credits**, with transparent tracking of environmental impact on-chain.
 
-Buyer/Investor: Purchases carbon credits for offsetting emissions or investment.
+## What it does
+- **Issuer** mints carbon credit tokens for verified projects
+- **Buyers** purchase credits to offset emissions or invest
+- **Sellers/Project owners** list credits they earned
+- **Retire** credits to permanently mark them as used (impact accounting)
 
-Seller/Project Owner: Lists and sells credits they earned for environmental actions.
+## Tech Stack
+- `contracts/` — smart contracts for credit tokens + marketplace flow
+- `frontend/` — UI for listing, buying, and retiring credits
+- `docs/` — notes/specs
 
-Auditor: Optionally validates transactions and monitors marketplace transparency.
+## Run Locally
+
+### Contracts
+```bash
+cd contracts
+# install & run depending on your tooling
+```
+## Frontend
+cd frontend
+npm install
+npm run dev
+
+## Repo Structure
+contracts/ — token + marketplace contracts
+frontend/ — user-facing app
+docs/ — scope/spec notes
+
+## Roadmap
+ 1.Standardize token model (ERC20/1155-like)
+ 2.Add retirement certificate / proof
+ 3.Indexing layer (events → UI)
+ 4.Access control + issuer verification flow
